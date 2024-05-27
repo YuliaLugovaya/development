@@ -35,7 +35,7 @@ export const PageHeader: FC = () => {
   }, []);
 
   const isActiveLink = (path: string) => {
-    return activeLink.endsWith(path) ? "color.blueDark" : "color.blue";
+    return activeLink.endsWith(path) ? "color.grey" : "text.secondary";
   };
 
   const dispatch = useDispatch();
@@ -90,7 +90,7 @@ export const PageHeader: FC = () => {
                       color: isActiveLink(routes.home.root),
                     }}
                   >
-                    {currentLanguage === "en" ? "Main" : "Главная"}
+                    {currentLanguage === "en" ? "main" : "главная"}
                   </Typography>
                 </Link>
                 <Link onClick={toggleDrawer} to={routes.home.portfolio}>
@@ -100,7 +100,7 @@ export const PageHeader: FC = () => {
                       color: isActiveLink(routes.home.portfolio),
                     }}
                   >
-                    {currentLanguage === "en" ? "Portfolio" : "Портфолио"}
+                    {currentLanguage === "en" ? "portfolio" : "портфолио"}
                   </Typography>
                 </Link>
                 <Link onClick={toggleDrawer} to={routes.home.about}>
@@ -110,7 +110,17 @@ export const PageHeader: FC = () => {
                       color: isActiveLink(routes.home.about),
                     }}
                   >
-                    {currentLanguage === "en" ? "About" : "Обо мне"}
+                    {currentLanguage === "en" ? "about" : "обо мне"}
+                  </Typography>
+                </Link>
+                <Link onClick={toggleDrawer} to={routes.home.contacts}>
+                  <Typography
+                    sx={{
+                      ...styles.headerLinksBurger,
+                      color: isActiveLink(routes.home.contacts),
+                    }}
+                  >
+                    {currentLanguage === "en" ? "contacts" : "контакты"}
                   </Typography>
                 </Link>
               </Box>
@@ -125,7 +135,7 @@ export const PageHeader: FC = () => {
                   color: isActiveLink(routes.home.root),
                 }}
               >
-                {currentLanguage === "en" ? "Main" : "Главная"}
+                {currentLanguage === "en" ? "main" : "главная"}
               </Typography>
             </Link>
             <Link to={routes.home.portfolio}>
@@ -135,7 +145,7 @@ export const PageHeader: FC = () => {
                   color: isActiveLink(routes.home.portfolio),
                 }}
               >
-                {currentLanguage === "en" ? "Portfolio" : "Портфолио"}
+                {currentLanguage === "en" ? "portfolio" : "портфолио"}
               </Typography>
             </Link>
             <Link to={routes.home.about}>
@@ -145,25 +155,37 @@ export const PageHeader: FC = () => {
                   color: isActiveLink(routes.home.about),
                 }}
               >
-                {currentLanguage === "en" ? "About" : "Обо мне"}
+                {currentLanguage === "en" ? "about" : "обо мне"}
               </Typography>
             </Link>
-            <Box>
-              <Button
-                onClick={() => handleLanguageChange("en")}
-                disabled={currentLanguage === "en"}
+            <Link to={routes.home.contacts}>
+              <Typography
+                sx={{
+                  ...styles.headerLinks,
+                  color: isActiveLink(routes.home.contacts),
+                }}
               >
-                EN
-              </Button>
-              <Button
-                onClick={() => handleLanguageChange("ru")}
-                disabled={currentLanguage === "ru"}
-              >
-                RU
-              </Button>
-            </Box>
+                {currentLanguage === "en" ? "contacts" : "контакты"}
+              </Typography>
+            </Link>
           </Box>
         )}
+        <Box sx={styles.headerLanguages}>
+          <Button
+            onClick={() => handleLanguageChange("en")}
+            disabled={currentLanguage === "en"}
+            sx={styles.headerLanguage}
+          >
+            EN
+          </Button>
+          <Button
+            onClick={() => handleLanguageChange("ru")}
+            disabled={currentLanguage === "ru"}
+            sx={styles.headerLanguage}
+          >
+            RU
+          </Button>
+        </Box>
       </Box>
     </Box>
   );

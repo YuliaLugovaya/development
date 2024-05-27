@@ -4,18 +4,22 @@ export const styles = {
     justifyContent: "space-between",
     p: {
       xs: "15px 20px",
-      md: "15px 50px",
+      md: "15px 10%",
     },
-    bgcolor: "color.blueDark",
-    color: "text.secondary",
+    bgcolor: "color.greyLight",
+    color: "text.primary",
     fontFamily: `"Open Sans", sans-serif`,
   },
+  footerLinks: {
+    display: "flex",
+    gap: "20px",
+  },
   footerLink: {
-    color: "text.secondary",
+    color: "text.primary",
     textDecoration: "none",
     transition: "ease 0.3s",
     "&:hover": {
-      color: "color.green",
+      color: "color.grey",
       transition: "ease 0.3s",
     },
   },

@@ -6,8 +6,9 @@ export const styles = {
     // zIndex: "1",
     p: {
       xs: "0 20px",
-      md: "0 50px",
+      md: "0 10%",
     },
+    bgcolor: "color.greyDark",
   },
   headerContainer: {
     display: "flex",
@@ -20,10 +21,10 @@ export const styles = {
       xs: "1.2rem",
       md: "1.5rem",
     },
-    color: "color.blue",
+    color: "text.secondary",
     transition: "ease 0.3s",
     "&:hover": {
-      color: "color.blueDark",
+      color: "color.grey",
       transition: "ease 0.3s",
     },
   },
@@ -33,10 +34,10 @@ export const styles = {
   },
   headerLinks: {
     fontSize: "1.1rem",
-    color: "color.blue",
+    color: "text.secondary",
     transition: "ease 0.3s",
     "&:hover": {
-      color: "color.blueDark",
+      color: "color.grey",
       transition: "ease 0.3s",
     },
   },
@@ -71,11 +72,27 @@ export const styles = {
   burgerMenu: {
     "& .MuiDrawer-paperAnchorRight": {
       p: "20px",
-      bgcolor: "color.blueLight",
+      bgcolor: "color.greyDark",
       width: "80vw",
     },
   },
   headerIconClose: {
     width: "30px",
+  },
+  headerLanguages: {
+    display: "flex",
+  },
+  headerLanguage: {
+    minWidth: "35px",
+    color: "text.secondary",
+    transition: "ease 0.3s",
+    "&:hover": {
+      color: "color.grey",
+      transition: "ease 0.3s",
+    },
+    "&:disabled": {
+      color: "color.grey",
+      transition: "ease 0.3s",
+    },
   },
 };
