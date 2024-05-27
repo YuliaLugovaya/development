@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Box, Button, CardMedia } from "@mui/material";
-import { styles } from "./Home.styled";
+import { styles } from "./About.styled";
 import { routes } from "config/routes";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useSelector } from "react-redux";
 import { LanguageState, initialState } from "store/languages/languagesTypes";
 
-export const Home: FC = () => {
+export const About: FC = () => {
   const navigate = useNavigate();
   const goToPortfolio = () => {
     navigate(`${routes.home.root}/${routes.home.portfolio}`);
@@ -22,9 +22,9 @@ export const Home: FC = () => {
   );
 
   return (
-    <Box sx={styles.homeContainer}>
-      <Box>Блок про фронтенд</Box>
-      <Box>
+    <Box sx={styles.portfolioContainer}>
+      <Box>About</Box>
+      {/* <Box>
         {" "}
         {currentLanguage === "en"
           ? "Some of my recent work"
@@ -32,7 +32,7 @@ export const Home: FC = () => {
       </Box>
       <Button onClick={goToPortfolio} sx={styles.homeButton}>
         {currentLanguage === "en" ? "More works" : "Больше работ"}
-      </Button>
+      </Button> */}
     </Box>
   );
 };

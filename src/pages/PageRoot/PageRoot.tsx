@@ -8,9 +8,9 @@ import { Layout } from "pages/Layout";
 // import { DayEvents } from "components/DayEvents";
 
 const HomePage = lazy(() => import("pages/HomePage"));
-// const CalendarPage = lazy(() => import("pages/CalendarPage"));
-// const DatePage = lazy(() => import("pages/DatePage"));
-// const BirthdayPage = lazy(() => import("pages/BirthdayPage"));
+const PortfolioPage = lazy(() => import("pages/PortfolioPage"));
+const AboutPage = lazy(() => import("pages/AboutPage"));
+const ContactsPage = lazy(() => import("pages/ContactsPage"));
 
 export const PageRoot: FC = () => {
   useLocationScrollToTop();
@@ -19,23 +19,12 @@ export const PageRoot: FC = () => {
       <Routes>
         <Route path={routes.home.root} element={<Layout />}>
           <Route index element={<HomePage />} />
-          {/* <Route path={`${routes.home.calendar}`} element={<CalendarPage />} />
-          <Route path={`${routes.home.date.root}`} element={<DatePage />}>
-            <Route path={`${routes.home.date.day}`} element={<DayEvents />}>
-              <Route
-                path={`${routes.home.date.addEvent}`}
-                element={<AddEvent />}
-              />
-              <Route
-                path={`${routes.home.date.editEvent}`}
-                element={<EditEvent />}
-              />
-            </Route>
-          </Route>
           <Route
-            path={`${routes.home.allBirthdays}`}
-            element={<BirthdayPage />}
-          /> */}
+            path={`${routes.home.portfolio}`}
+            element={<PortfolioPage />}
+          />
+          <Route path={`${routes.home.about}`} element={<AboutPage />} />
+          <Route path={`${routes.home.contacts}`} element={<ContactsPage />} />
         </Route>
       </Routes>
     </Suspense>

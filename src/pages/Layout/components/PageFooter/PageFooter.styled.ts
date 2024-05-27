@@ -6,7 +6,7 @@ export const styles = {
       xs: "15px 20px",
       md: "15px 10%",
     },
-    bgcolor: "color.greyLight",
+    bgcolor: "color.greyLighten",
     color: "text.primary",
     fontFamily: `"Open Sans", sans-serif`,
   },

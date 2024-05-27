@@ -46,7 +46,7 @@ export const PageHeader: FC = () => {
         : initialState.language,
   );
 
-  const handleLanguageChange = (language: string) => {
+  const languageChange = (language: string) => {
     dispatch(switchLanguage(language));
   };
 
@@ -172,14 +172,14 @@ export const PageHeader: FC = () => {
         )}
         <Box sx={styles.headerLanguages}>
           <Button
-            onClick={() => handleLanguageChange("en")}
+            onClick={() => languageChange("en")}
             disabled={currentLanguage === "en"}
             sx={styles.headerLanguage}
           >
             EN
           </Button>
           <Button
-            onClick={() => handleLanguageChange("ru")}
+            onClick={() => languageChange("ru")}
             disabled={currentLanguage === "ru"}
             sx={styles.headerLanguage}
           >

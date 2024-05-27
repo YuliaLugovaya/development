@@ -41,16 +41,15 @@ export const styles = {
   },
   homeButton: {
     alignSelf: "center",
-    width: "300px",
-    p: "20px",
+    // width: "300px",
+    p: "20px 45px",
     mt: "70px",
-    border: "1px solid",
-    borderColor: "color.green",
-    bgcolor: "color.greenLight",
-    color: "text.primary",
+    // border: "1px solid",
+    // borderColor: "color.green",
+    bgcolor: "color.greyDark",
+    color: "text.secondary",
     "&:hover": {
-      bgcolor: "color.green",
-      color: "text.secondary",
+      bgcolor: "color.greyDarken",
     },
   },
   homeImageWrapper: {
