@@ -1,99 +1,103 @@
 export const styles = {
-  portfolioContainer: {
+  contactsWrapper: {
     display: "flex",
     flexDirection: "column",
+  },
+  contactsContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    gap: "15px",
     width: "100%",
     p: {
-      xs: "20px",
-      md: "50px",
+      xs: "20px 20px",
+      md: "5% 10%",
     },
     mt: "20px",
-    // "& .slick-slider": {
-    //   "& .slick-arrow": {
-    //     display: "none !important",
-    //   },
-    //   "& .slick-next": {
-    //     right: "0px",
-    //   },
-    //   "& .slick-prev": {
-    //     left: "0px",
-    //   },
-    //   "& .slick-dots": {
-    //     bottom: "-50px",
-    //   },
-    //   "& .slick-dots li.slick-active button:before": {
-    //     color: "color.green",
-    //   },
-    //   "& .slick-dots li button:before": {
-    //     color: "color.yellow",
-    //   },
-    // },
+    fontFamily: `"Open Sans", sans-serif`,
   },
-  // homeSlide: {
-  //   display: "flex",
-  //   flexDirection: {
-  //     xs: "column",
-  //     lg: "row",
-  //   },
-  //   justifyContent: "center",
-  //   width: "100%",
-  //   p: "10px 0",
-  // },
-  // homeButton: {
-  //   alignSelf: "center",
-  //   // width: "300px",
-  //   p: "20px 45px",
-  //   mt: "70px",
-  //   // border: "1px solid",
-  //   // borderColor: "color.green",
-  //   bgcolor: "color.greyDark",
-  //   color: "text.secondary",
-  //   "&:hover": {
-  //     bgcolor: "color.greyDarken",
-  //   },
-  // },
-  // homeImageWrapper: {
-  //   width: {
-  //     xs: "100%",
-  //     lg: "50%",
-  //     xl: "45%",
-  //   },
-  //   p: {
-  //     xs: "0 10px",
-  //     lg: "0px",
-  //   },
-  // },
-  // homeImage: {
-  //   borderRadius: "10px",
-  //   boxShadow: "0px 0px 10px 0px rgba(37, 37, 37, 0.3)",
-  // },
-  // homeTitleWrapper: {
-  //   width: {
-  //     xs: "100%",
-  //     lg: "40%",
-  //     xl: "45%",
-  //   },
-  // },
-  // homeTitle: {
-  //   mb: {
-  //     xs: "30px",
-  //     lg: "0px",
-  //   },
-  //   textAlign: "center",
-  //   width: {
-  //     xs: "100%",
-  //     lg: "70%",
-  //   },
-  //   fontSize: {
-  //     xs: "1.2rem",
-  //     md: "1.5rem",
-  //     lg: "2.1rem",
-  //     xl: "3rem",
-  //   },
-  //   color: "text.primary",
-  // },
-  // homeTitleAccent: {
-  //   display: "inline",
-  //   color: "color.green",
-  // },
+  contactsDescription: {
+    display: "flex",
+    flexDirection: "column",
+    width: "50%",
+  },
+  contactsTitle: {
+    mb: "20px",
+    fontFamily: `"Montserrat", sans-serif`,
+    fontSize: "4rem",
+    fontWeight: "600",
+  },
+  contactsSubtitle: {
+    mb: "20px",
+    fontFamily: `"Open Sans", sans-serif`,
+    fontSize: "2rem",
+    color: "color.grey",
+  },
+  contactsImage: {
+    width: "50%",
+    maxWidth: "500px",
+  },
+  contactsSocialsWrapper: {
+    display: "flex",
+    flexWrap: "wrap",
+  },
+  contactsSocialsLink: {
+    width: "50%",
+    textDecoration: "none",
+    cursor: "pointer",
+  },
+  contactsSocialsItem: {
+    display: "flex",
+    gap: "15px",
+    p: "10px 0px",
+    transition: "ease 0.5s",
+    "&:hover": {
+      opacity: "0.7",
+      transition: "ease 0.5s",
+    },
+  },
+  contactsIcon: {
+    width: "50px",
+    borderRadius: "5px",
+  },
+  contactsSocialsEmail: {
+    color: "color.grey",
+    wordBreak: "break-all",
+  },
+  contactsOtherContacts: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    gap: "20px",
+    p: {
+      xs: "20px 20px",
+      md: "5% 10%",
+    },
+    bgcolor: "color.greyLight",
+  },
+  contactsOtherContactsItem: {
+    width: "33.33%",
+    display: "flex",
+    gap: "15px",
+    p: "10px 0px",
+  },
+  contactsOtherContactsGithub: {
+    display: "flex",
+    gap: "15px",
+    p: "10px 0px",
+    transition: "ease 0.5s",
+    "&:hover": {
+      opacity: "0.7",
+      transition: "ease 0.5s",
+    },
+  },
+  contactsOtherContactsLink: {
+    width: "33.33%",
+    textDecoration: "none",
+    cursor: "pointer",
+    color: "color.greyDark",
+  },
+  contactsGithub: {
+    borderBottom: "1px solid",
+    borderColor: "color.greyDark",
+  },
 };

@@ -123,6 +123,22 @@ export const PageHeader: FC = () => {
                     {currentLanguage === "en" ? "contacts" : "контакты"}
                   </Typography>
                 </Link>
+                <Box sx={styles.headerLanguages}>
+                  <Button
+                    onClick={() => languageChange("en")}
+                    disabled={currentLanguage === "en"}
+                    sx={styles.headerLanguage}
+                  >
+                    EN
+                  </Button>
+                  <Button
+                    onClick={() => languageChange("ru")}
+                    disabled={currentLanguage === "ru"}
+                    sx={styles.headerLanguage}
+                  >
+                    RU
+                  </Button>
+                </Box>
               </Box>
             </Drawer>
           </Box>
@@ -170,22 +186,24 @@ export const PageHeader: FC = () => {
             </Link>
           </Box>
         )}
-        <Box sx={styles.headerLanguages}>
-          <Button
-            onClick={() => languageChange("en")}
-            disabled={currentLanguage === "en"}
-            sx={styles.headerLanguage}
-          >
-            EN
-          </Button>
-          <Button
-            onClick={() => languageChange("ru")}
-            disabled={currentLanguage === "ru"}
-            sx={styles.headerLanguage}
-          >
-            RU
-          </Button>
-        </Box>
+        {!isMobile && (
+          <Box sx={styles.headerLanguages}>
+            <Button
+              onClick={() => languageChange("en")}
+              disabled={currentLanguage === "en"}
+              sx={styles.headerLanguage}
+            >
+              EN
+            </Button>
+            <Button
+              onClick={() => languageChange("ru")}
+              disabled={currentLanguage === "ru"}
+              sx={styles.headerLanguage}
+            >
+              RU
+            </Button>
+          </Box>
+        )}
       </Box>
     </Box>
   );

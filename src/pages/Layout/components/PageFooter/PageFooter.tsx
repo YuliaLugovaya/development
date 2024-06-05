@@ -28,8 +28,7 @@ export const PageFooter: FC = () => {
         target="_blank"
         rel="noreferrer"
       >
-        &copy; {todayDate}{" "}
-        {currentLanguage === "en" ? "Yulia Lugovaya" : "Юлия Луговая"} (GitHub)
+        &copy; {todayDate} YuliaLugovaya (GitHub)
       </Box>
       <Box sx={styles.footerLinks}>
         <Link to={routes.home.root}>
