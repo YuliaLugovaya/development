@@ -23,13 +23,13 @@ export const styles = {
   contactsTitle: {
     mb: "20px",
     fontFamily: `"Montserrat", sans-serif`,
-    fontSize: "4rem",
+    fontSize: "4.2rem",
     fontWeight: "600",
   },
   contactsSubtitle: {
     mb: "20px",
     fontFamily: `"Open Sans", sans-serif`,
-    fontSize: "2rem",
+    fontSize: "1.8rem",
     color: "color.grey",
   },
   contactsImage: {
@@ -79,6 +79,7 @@ export const styles = {
     display: "flex",
     gap: "15px",
     p: "10px 0px",
+    fontFamily: `"Open Sans", sans-serif`,
   },
   contactsOtherContactsGithub: {
     display: "flex",
