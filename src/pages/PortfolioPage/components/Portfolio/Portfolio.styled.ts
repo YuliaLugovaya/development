@@ -3,97 +3,64 @@ export const styles = {
     display: "flex",
     flexDirection: "column",
     width: "100%",
-    p: {
-      xs: "20px",
-      md: "50px",
-    },
-    mt: "20px",
-    // "& .slick-slider": {
-    //   "& .slick-arrow": {
-    //     display: "none !important",
-    //   },
-    //   "& .slick-next": {
-    //     right: "0px",
-    //   },
-    //   "& .slick-prev": {
-    //     left: "0px",
-    //   },
-    //   "& .slick-dots": {
-    //     bottom: "-50px",
-    //   },
-    //   "& .slick-dots li.slick-active button:before": {
-    //     color: "color.green",
-    //   },
-    //   "& .slick-dots li button:before": {
-    //     color: "color.yellow",
-    //   },
+    // p: {
+    //   xs: "20px 20px",
+    //   md: "5% 10%",
     // },
+    mt: "20px",
   },
-  // homeSlide: {
-  //   display: "flex",
-  //   flexDirection: {
-  //     xs: "column",
-  //     lg: "row",
-  //   },
-  //   justifyContent: "center",
-  //   width: "100%",
-  //   p: "10px 0",
-  // },
-  // homeButton: {
-  //   alignSelf: "center",
-  //   // width: "300px",
-  //   p: "20px 45px",
-  //   mt: "70px",
-  //   // border: "1px solid",
-  //   // borderColor: "color.green",
-  //   bgcolor: "color.greyDark",
-  //   color: "text.secondary",
-  //   "&:hover": {
-  //     bgcolor: "color.greyDarken",
-  //   },
-  // },
-  // homeImageWrapper: {
-  //   width: {
-  //     xs: "100%",
-  //     lg: "50%",
-  //     xl: "45%",
-  //   },
-  //   p: {
-  //     xs: "0 10px",
-  //     lg: "0px",
-  //   },
-  // },
-  // homeImage: {
-  //   borderRadius: "10px",
-  //   boxShadow: "0px 0px 10px 0px rgba(37, 37, 37, 0.3)",
-  // },
-  // homeTitleWrapper: {
-  //   width: {
-  //     xs: "100%",
-  //     lg: "40%",
-  //     xl: "45%",
-  //   },
-  // },
-  // homeTitle: {
-  //   mb: {
-  //     xs: "30px",
-  //     lg: "0px",
-  //   },
-  //   textAlign: "center",
-  //   width: {
-  //     xs: "100%",
-  //     lg: "70%",
-  //   },
-  //   fontSize: {
-  //     xs: "1.2rem",
-  //     md: "1.5rem",
-  //     lg: "2.1rem",
-  //     xl: "3rem",
-  //   },
-  //   color: "text.primary",
-  // },
-  // homeTitleAccent: {
-  //   display: "inline",
-  //   color: "color.green",
-  // },
+  portfolioWelcome: {
+    display: "flex",
+    justifyContent: "space-between",
+    gap: "15px",
+    width: "100%",
+    p: {
+      xs: "20px 20px",
+      md: "5% 10%",
+    },
+    m: "20px 0 30px 0",
+    fontFamily: `"Open Sans", sans-serif`,
+  },
+  portfolioWelcomeDescription: {
+    display: "flex",
+    flexDirection: "column",
+    width: "50%",
+  },
+  portfolioTitle: {
+    mb: "20px",
+    fontFamily: `"Montserrat", sans-serif`,
+    fontSize: "4.2rem",
+    fontWeight: "600",
+  },
+  portfolioSubtitle: {
+    mb: "20px",
+    fontFamily: `"Open Sans", sans-serif`,
+    fontSize: "1.8rem",
+    color: "color.grey",
+  },
+  portfolioText: {
+    mb: "15px",
+    fontFamily: `"Open Sans", sans-serif`,
+    fontSize: "1.1rem",
+  },
+  portfolioImage: {
+    width: "50%",
+    maxWidth: "500px",
+  },
+  portfolioCardsWrapper: {
+    bgcolor: "color.greyLight",
+  },
+  portfolioCardsContainer: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "25px",
+    p: {
+      xs: "20px 20px",
+      md: "5% 10%",
+    },
+  },
+  portfolioCards: {
+    display: "flex",
+  },
 };

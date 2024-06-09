@@ -11,9 +11,9 @@ import { styles } from "./Contacts.styled";
 import { useSelector } from "react-redux";
 import { LanguageState, initialState } from "store/languages/languagesTypes";
 import contacts from "assets/images/png/contacts.png";
-import whatsapp from "assets/images/png/whatsapp2.png";
+import whatsapp from "assets/images/png/whatsapp.png";
 import linkedin from "assets/images/png/linkedin.png";
-import instagram from "assets/images/png/instagram2.png";
+import instagram from "assets/images/png/instagram.png";
 import email from "assets/images/png/e-mail2.png";
 import viber from "assets/images/png/viber.png";
 import github from "assets/images/png/github.png";
@@ -42,7 +42,7 @@ export const Contacts: FC = () => {
           <Box>
             <List sx={styles.contactsSocialsWrapper}>
               <Link
-                sx={{ ...styles.contactsSocialsLink, color: "#30bf2f" }}
+                sx={{ ...styles.contactsSocialsLink, color: "color.greenDark" }}
                 href="https://https://wa.me/375291521880"
                 target="_blank"
                 component="a"
@@ -58,7 +58,7 @@ export const Contacts: FC = () => {
                 </ListItem>
               </Link>
               <Link
-                sx={{ ...styles.contactsSocialsLink, color: "#7360f2" }}
+                sx={{ ...styles.contactsSocialsLink, color: "color.blueDark" }}
                 href="viber://chat?number=%2B375291521880"
                 target="_blank"
               >
@@ -73,7 +73,10 @@ export const Contacts: FC = () => {
                 </ListItem>
               </Link>
               <Link
-                sx={{ ...styles.contactsSocialsLink, color: "#0172b1" }}
+                sx={{
+                  ...styles.contactsSocialsLink,
+                  color: "color.blueWarmDark",
+                }}
                 href="https://www.linkedin.com/in/yulialugovaya/"
                 target="_blank"
               >
@@ -88,7 +91,7 @@ export const Contacts: FC = () => {
                 </ListItem>
               </Link>
               <Link
-                sx={{ ...styles.contactsSocialsLink, color: "#ed7c8f" }}
+                sx={{ ...styles.contactsSocialsLink, color: "color.redDark" }}
                 href="https://www.instagram.com/yulia.lugovaya/"
                 target="_blank"
               >

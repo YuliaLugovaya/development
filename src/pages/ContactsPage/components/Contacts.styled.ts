@@ -2,6 +2,7 @@ export const styles = {
   contactsWrapper: {
     display: "flex",
     flexDirection: "column",
+    mt: "20px",
   },
   contactsContainer: {
     display: "flex",
@@ -77,12 +78,14 @@ export const styles = {
   contactsOtherContactsItem: {
     width: "33.33%",
     display: "flex",
+    justifyContent: "center",
     gap: "15px",
     p: "10px 0px",
     fontFamily: `"Open Sans", sans-serif`,
   },
   contactsOtherContactsGithub: {
     display: "flex",
+    justifyContent: "center",
     gap: "15px",
     p: "10px 0px",
     transition: "ease 0.5s",
