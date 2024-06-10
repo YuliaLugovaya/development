@@ -3,16 +3,16 @@ export const styles = {
     display: "flex",
     flexDirection: "column",
     width: "100%",
-    // p: {
-    //   xs: "20px",
-    //   md: "50px",
-    // },
     mt: "20px",
   },
   homeWelcome: {
     display: "flex",
+    flexDirection: {
+      xs: "column",
+      lg: "row",
+    },
     justifyContent: "space-between",
-    gap: "15px",
+    gap: "25px",
     width: "100%",
     p: {
       xs: "20px 20px",
@@ -25,12 +25,18 @@ export const styles = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "start",
-    width: "50%",
+    width: {
+      xs: "100%",
+      lg: "50%",
+    },
   },
   homeTitle: {
     mb: "20px",
     fontFamily: `"Montserrat", sans-serif`,
-    fontSize: "4.2rem",
+    fontSize: {
+      xs: "4rem",
+      md: "4.2rem",
+    },
     fontWeight: "600",
   },
   homeSubtitle: {
@@ -44,8 +50,11 @@ export const styles = {
     fontSize: "1.1rem",
   },
   homeImage: {
-    width: "50%",
-    maxWidth: "500px",
+    width: {
+      xs: "100%",
+      lg: "50%",
+    },
+    maxWidth: "100%",
   },
   homeWorksWrapper: {
     display: "flex",
@@ -54,7 +63,7 @@ export const styles = {
     width: "100%",
     bgcolor: "color.greyLight",
     p: {
-      xs: "20px 20px",
+      xs: "45px 20px",
       md: "5% 10%",
     },
   },
@@ -74,7 +83,7 @@ export const styles = {
   homeButton: {
     alignSelf: "center",
     p: "20px 45px",
-    mt: "70px",
+    mt: "50px",
     bgcolor: "color.greyDark",
     color: "text.secondary",
     "&:hover": {

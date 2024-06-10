@@ -3,10 +3,8 @@ import {
   Box,
   Button,
   CardMedia,
-  Grid,
   List,
   ListItem,
-  Paper,
   Typography,
 } from "@mui/material";
 import { styles } from "./About.styled";
@@ -95,7 +93,7 @@ export const About: FC = () => {
               </ListItem>
             </List>
           </Box>
-          <Box>
+          <Box sx={styles.aboutSkillsChart}>
             <CChart
               type="pie"
               data={{

@@ -1,9 +1,5 @@
 export const styles = {
   headerWrapper: {
-    // position: "fixed",
-    // top: 0,
-    // width: "100%",
-    // zIndex: "1",
     p: {
       xs: "0 20px",
       md: "0 10%",

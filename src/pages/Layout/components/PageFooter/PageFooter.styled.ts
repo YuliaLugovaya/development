@@ -1,7 +1,10 @@
 export const styles = {
   footerWrapper: {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: {
+      xs: "center",
+      md: "space-between",
+    },
     p: {
       xs: "15px 20px",
       md: "15px 10%",
@@ -11,7 +14,10 @@ export const styles = {
     fontFamily: `"Open Sans", sans-serif`,
   },
   footerLinks: {
-    display: "flex",
+    display: {
+      xs: "none",
+      md: "flex",
+    },
     gap: "20px",
   },
   footerLink: {

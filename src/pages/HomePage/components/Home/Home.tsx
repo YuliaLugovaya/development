@@ -41,7 +41,10 @@ export const Home: FC = () => {
           </Typography>
           <Button
             onClick={goToAbout}
-            sx={{ ...styles.homeButton, alignSelf: "start" }}
+            sx={{
+              ...styles.homeButton,
+              alignSelf: { xs: "center", lg: "start" },
+            }}
           >
             {currentLanguage === "en" ? "More about me" : "Больше обо мне"}
           </Button>

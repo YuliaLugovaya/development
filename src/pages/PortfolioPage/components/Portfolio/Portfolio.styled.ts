@@ -3,16 +3,16 @@ export const styles = {
     display: "flex",
     flexDirection: "column",
     width: "100%",
-    // p: {
-    //   xs: "20px 20px",
-    //   md: "5% 10%",
-    // },
     mt: "20px",
   },
   portfolioWelcome: {
     display: "flex",
+    flexDirection: {
+      xs: "column",
+      lg: "row",
+    },
     justifyContent: "space-between",
-    gap: "15px",
+    gap: "25px",
     width: "100%",
     p: {
       xs: "20px 20px",
@@ -24,12 +24,18 @@ export const styles = {
   portfolioWelcomeDescription: {
     display: "flex",
     flexDirection: "column",
-    width: "50%",
+    width: {
+      xs: "100%",
+      lg: "50%",
+    },
   },
   portfolioTitle: {
     mb: "20px",
     fontFamily: `"Montserrat", sans-serif`,
-    fontSize: "4.2rem",
+    fontSize: {
+      xs: "4rem",
+      md: "4.2rem",
+    },
     fontWeight: "600",
   },
   portfolioSubtitle: {
@@ -44,8 +50,11 @@ export const styles = {
     fontSize: "1.1rem",
   },
   portfolioImage: {
-    width: "50%",
-    maxWidth: "500px",
+    width: {
+      xs: "100%",
+      lg: "50%",
+    },
+    maxWidth: "100%",
   },
   portfolioCardsWrapper: {
     bgcolor: "color.greyLight",
@@ -56,7 +65,7 @@ export const styles = {
     justifyContent: "center",
     gap: "25px",
     p: {
-      xs: "20px 20px",
+      xs: "45px 20px",
       md: "5% 10%",
     },
   },

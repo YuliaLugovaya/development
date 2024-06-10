@@ -7,8 +7,12 @@ export const styles = {
   },
   aboutWelcome: {
     display: "flex",
+    flexDirection: {
+      xs: "column",
+      lg: "row",
+    },
     justifyContent: "space-between",
-    gap: "15px",
+    gap: "25px",
     width: "100%",
     p: {
       xs: "20px 20px",
@@ -20,12 +24,18 @@ export const styles = {
   aboutWelcomeDescription: {
     display: "flex",
     flexDirection: "column",
-    width: "50%",
+    width: {
+      xs: "100%",
+      lg: "50%",
+    },
   },
   aboutTitle: {
     mb: "20px",
     fontFamily: `"Montserrat", sans-serif`,
-    fontSize: "4.2rem",
+    fontSize: {
+      xs: "4rem",
+      md: "4.2rem",
+    },
     fontWeight: "600",
   },
   aboutSubtitle: {
@@ -40,8 +50,11 @@ export const styles = {
     fontSize: "1.1rem",
   },
   aboutImage: {
-    width: "50%",
-    maxWidth: "500px",
+    width: {
+      xs: "100%",
+      lg: "50%",
+    },
+    maxWidth: "100%",
   },
   aboutSkillsWrapper: {
     width: "100%",
@@ -50,15 +63,23 @@ export const styles = {
   aboutSkills: {
     width: "100%",
     display: "flex",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
     justifyContent: "space-between",
     gap: "20px",
     p: {
-      xs: "20px 20px",
+      xs: "45px 20px",
       md: "5% 10%",
     },
   },
   aboutSkillsPart: {
-    width: "30%",
+    width: {
+      xs: "100%",
+      md: "50%",
+      lg: "30%",
+    },
   },
   aboutSkillsListTitle: {
     mb: "10px",
@@ -75,6 +96,12 @@ export const styles = {
   aboutSkillsItem: {
     fontFamily: `"Open Sans", sans-serif`,
     p: "0px",
+  },
+  aboutSkillsChart: {
+    display: {
+      xs: "none",
+      lg: "block",
+    },
   },
   aboutExperienceAndEducation: {
     display: "flex",
@@ -116,11 +143,18 @@ export const styles = {
   aboutExperienceItems: {
     width: "100%",
     display: "flex",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
     justifyContent: "space-between",
     gap: "20px",
   },
   aboutExperienceItem: {
-    width: "50%",
+    width: {
+      xs: "100%",
+      md: "50%",
+    },
     mb: "45px",
   },
   aboutEducationWrapper: {
@@ -137,15 +171,24 @@ export const styles = {
     },
   },
   aboutLanguages: {
-    width: "500px",
+    width: {
+      xs: "300px",
+      md: "500px",
+    },
     height: "300px",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "end",
-    mt: "15%",
+    mt: {
+      xs: "30%",
+      md: "15%",
+    },
   },
   aboutLanguage: {
-    width: "150px",
+    width: {
+      xs: "90px",
+      md: "150px",
+    },
   },
   aboutLanguageRu: {
     display: "flex",

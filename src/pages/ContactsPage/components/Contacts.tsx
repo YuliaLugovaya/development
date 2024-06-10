@@ -116,7 +116,7 @@ export const Contacts: FC = () => {
           ></CardMedia>
         </Box>
       </Box>
-      <Box component="section">
+      <Box component="section" sx={styles.contactsOtherContactsWrapper}>
         <List sx={styles.contactsOtherContacts}>
           <ListItem sx={styles.contactsOtherContactsItem}>
             <CardMedia

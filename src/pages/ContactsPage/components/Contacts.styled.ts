@@ -6,8 +6,12 @@ export const styles = {
   },
   contactsContainer: {
     display: "flex",
+    flexDirection: {
+      xs: "column",
+      lg: "row",
+    },
     justifyContent: "space-between",
-    gap: "15px",
+    gap: "25px",
     width: "100%",
     p: {
       xs: "20px 20px",
@@ -19,12 +23,18 @@ export const styles = {
   contactsDescription: {
     display: "flex",
     flexDirection: "column",
-    width: "50%",
+    width: {
+      xs: "100%",
+      lg: "50%",
+    },
   },
   contactsTitle: {
     mb: "20px",
     fontFamily: `"Montserrat", sans-serif`,
-    fontSize: "4.2rem",
+    fontSize: {
+      xs: "4rem",
+      md: "4.2rem",
+    },
     fontWeight: "600",
   },
   contactsSubtitle: {
@@ -34,8 +44,11 @@ export const styles = {
     color: "color.grey",
   },
   contactsImage: {
-    width: "50%",
-    maxWidth: "500px",
+    width: {
+      xs: "100%",
+      lg: "50%",
+    },
+    maxWidth: "100%",
   },
   contactsSocialsWrapper: {
     display: "flex",
@@ -64,28 +77,43 @@ export const styles = {
     color: "color.grey",
     wordBreak: "break-all",
   },
+  contactsOtherContactsWrapper: {
+    bgcolor: "color.greyLight",
+  },
   contactsOtherContacts: {
     width: "100%",
     display: "flex",
+    flexDirection: {
+      xs: "column",
+      lg: "row",
+    },
     justifyContent: "center",
     gap: "20px",
     p: {
-      xs: "20px 20px",
+      xs: "45px 20px",
       md: "5% 10%",
     },
-    bgcolor: "color.greyLight",
   },
   contactsOtherContactsItem: {
-    width: "33.33%",
+    width: {
+      xs: "100%",
+      lg: "33.33%",
+    },
     display: "flex",
-    justifyContent: "center",
+    justifyContent: {
+      xs: "start",
+      lg: "center",
+    },
     gap: "15px",
     p: "10px 0px",
     fontFamily: `"Open Sans", sans-serif`,
   },
   contactsOtherContactsGithub: {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: {
+      xs: "start",
+      lg: "center",
+    },
     gap: "15px",
     p: "10px 0px",
     transition: "ease 0.5s",
@@ -95,7 +123,10 @@ export const styles = {
     },
   },
   contactsOtherContactsLink: {
-    width: "33.33%",
+    width: {
+      xs: "100%",
+      lg: "33.33%",
+    },
     textDecoration: "none",
     cursor: "pointer",
     color: "color.greyDark",
