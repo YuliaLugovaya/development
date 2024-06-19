@@ -33,8 +33,9 @@ export const styles = {
     mb: "20px",
     fontFamily: `"Montserrat", sans-serif`,
     fontSize: {
-      xs: "4rem",
-      md: "4.2rem",
+      xs: "3rem",
+      md: "4rem",
+      lg: "4.2rem",
     },
     fontWeight: "600",
   },
@@ -172,23 +173,21 @@ export const styles = {
   },
   aboutLanguages: {
     width: {
-      xs: "300px",
-      md: "500px",
+      xs: "100%",
+      md: "50%",
     },
     height: "300px",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "end",
     mt: {
-      xs: "30%",
+      xs: "20%",
       md: "15%",
+      lg: "10%",
     },
   },
   aboutLanguage: {
-    width: {
-      xs: "90px",
-      md: "150px",
-    },
+    width: "30%",
   },
   aboutLanguageRu: {
     display: "flex",

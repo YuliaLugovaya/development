@@ -32,8 +32,9 @@ export const styles = {
     mb: "20px",
     fontFamily: `"Montserrat", sans-serif`,
     fontSize: {
-      xs: "4rem",
-      md: "4.2rem",
+      xs: "3rem",
+      md: "4rem",
+      lg: "4.2rem",
     },
     fontWeight: "600",
   },
@@ -44,6 +45,10 @@ export const styles = {
     color: "color.grey",
   },
   contactsImage: {
+    display: {
+      xs: "none",
+      lg: "block",
+    },
     width: {
       xs: "100%",
       lg: "50%",
@@ -61,7 +66,10 @@ export const styles = {
   },
   contactsSocialsItem: {
     display: "flex",
-    gap: "15px",
+    gap: {
+      xs: "10px",
+      md: "15px",
+    },
     p: "10px 0px",
     transition: "ease 0.5s",
     "&:hover": {
@@ -104,7 +112,10 @@ export const styles = {
       xs: "start",
       lg: "center",
     },
-    gap: "15px",
+    gap: {
+      xs: "10px",
+      md: "15px",
+    },
     p: "10px 0px",
     fontFamily: `"Open Sans", sans-serif`,
   },

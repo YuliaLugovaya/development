@@ -33,8 +33,9 @@ export const styles = {
     mb: "20px",
     fontFamily: `"Montserrat", sans-serif`,
     fontSize: {
-      xs: "4rem",
-      md: "4.2rem",
+      xs: "3rem",
+      md: "4rem",
+      lg: "4.2rem",
     },
     fontWeight: "600",
   },
