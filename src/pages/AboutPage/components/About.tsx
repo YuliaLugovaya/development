@@ -218,47 +218,43 @@ export const About: FC = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={styles.aboutExperienceAndEducation} component="section">
-        <Box>
-          <Typography sx={styles.aboutExperienceAndEducationTitle}>
-            {currentLanguage === "en" ? "Languages" : "Языки"}
-          </Typography>
-          <Box>
-            <Box sx={styles.aboutLanguages}>
-              <Box sx={styles.aboutLanguage}>
-                <Typography sx={styles.aboutLanguageDescription}>
-                  {currentLanguage === "en" ? "Proficiency" : "В совершенстве"}
-                </Typography>
-                <Box sx={styles.aboutLanguageRu}>
-                  <Typography>C2</Typography>
-                </Box>
-                <Typography sx={styles.aboutLanguageDescription}>
-                  {currentLanguage === "en" ? "Russian" : "Русский"}
-                </Typography>
-              </Box>
-              <Box sx={styles.aboutLanguage}>
-                <Typography sx={styles.aboutLanguageDescription}>
-                  {currentLanguage === "en" ? "Advanced" : "Продвинутый"}
-                </Typography>
-                <Box sx={styles.aboutLanguageBy}>
-                  <Typography>C1</Typography>
-                </Box>
-                <Typography sx={styles.aboutLanguageDescription}>
-                  {currentLanguage === "en" ? "Belorussian" : "Белорусский"}
-                </Typography>
-              </Box>
-              <Box sx={styles.aboutLanguage}>
-                <Typography sx={styles.aboutLanguageDescription}>
-                  {currentLanguage === "en" ? "Intermediate" : "Средний"}
-                </Typography>
-                <Box sx={styles.aboutLanguageEn}>
-                  <Typography>B1</Typography>
-                </Box>
-                <Typography sx={styles.aboutLanguageDescription}>
-                  {currentLanguage === "en" ? "English" : "Английский"}
-                </Typography>
-              </Box>
+      <Box sx={styles.aboutLanguagesWrapper} component="section">
+        <Typography sx={styles.aboutExperienceAndEducationTitle}>
+          {currentLanguage === "en" ? "Languages" : "Языки"}
+        </Typography>
+        <Box sx={styles.aboutLanguages}>
+          <Box sx={styles.aboutLanguage}>
+            <Typography sx={styles.aboutLanguageDescription}>
+              {currentLanguage === "en" ? "Proficiency" : "В совершенстве"}
+            </Typography>
+            <Box sx={styles.aboutLanguageRu}>
+              <Typography>C2</Typography>
             </Box>
+            <Typography sx={styles.aboutLanguageDescription}>
+              {currentLanguage === "en" ? "Russian" : "Русский"}
+            </Typography>
+          </Box>
+          <Box sx={styles.aboutLanguage}>
+            <Typography sx={styles.aboutLanguageDescription}>
+              {currentLanguage === "en" ? "Advanced" : "Продвинутый"}
+            </Typography>
+            <Box sx={styles.aboutLanguageBy}>
+              <Typography>C1</Typography>
+            </Box>
+            <Typography sx={styles.aboutLanguageDescription}>
+              {currentLanguage === "en" ? "Belorussian" : "Белорусский"}
+            </Typography>
+          </Box>
+          <Box sx={styles.aboutLanguage}>
+            <Typography sx={styles.aboutLanguageDescription}>
+              {currentLanguage === "en" ? "Intermediate" : "Средний"}
+            </Typography>
+            <Box sx={styles.aboutLanguageEn}>
+              <Typography>B1</Typography>
+            </Box>
+            <Typography sx={styles.aboutLanguageDescription}>
+              {currentLanguage === "en" ? "English" : "Английский"}
+            </Typography>
           </Box>
         </Box>
       </Box>

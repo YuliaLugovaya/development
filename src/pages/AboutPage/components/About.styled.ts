@@ -93,10 +93,14 @@ export const styles = {
     display: "flex",
     flexDirection: "column",
     gap: "10px",
+    listStyle: "circle",
+    listStyleType: "circle",
+    pl: "20px",
   },
   aboutSkillsItem: {
     fontFamily: `"Open Sans", sans-serif`,
     p: "0px",
+    display: "list-item",
   },
   aboutSkillsChart: {
     display: {
@@ -171,12 +175,23 @@ export const styles = {
       md: "5% 10%",
     },
   },
+  aboutLanguagesWrapper: {
+    display: "flex",
+    flexDirection: "column",
+    p: {
+      xs: "20px 20px 30px 20px",
+      md: "5% 10%",
+    },
+  },
   aboutLanguages: {
     width: {
       xs: "100%",
-      md: "50%",
+      lg: "50%",
     },
-    height: "300px",
+    height: {
+      xs: "200px",
+      md: "300px",
+    },
     display: "flex",
     justifyContent: "space-between",
     alignItems: "end",
@@ -193,21 +208,30 @@ export const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "300px",
+    height: {
+      xs: "200px",
+      md: "300px",
+    },
     bgcolor: "color.green",
   },
   aboutLanguageBy: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "250px",
+    height: {
+      xs: "150px",
+      md: "250px",
+    },
     bgcolor: "color.greenWarm",
   },
   aboutLanguageEn: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "150px",
+    height: {
+      xs: "100px",
+      md: "150px",
+    },
     bgcolor: "color.yellow",
   },
   aboutLanguageDescription: {
