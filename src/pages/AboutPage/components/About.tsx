@@ -64,33 +64,33 @@ export const About: FC = () => {
             <List sx={styles.aboutSkillsList}>
               <ListItem sx={styles.aboutSkillsItem}>
                 {currentLanguage === "en"
-                  ? "Able to work in a team to achieve a common goal"
-                  : "Умею работать в команде для достижения общей цели"}
+                  ? "able to work in a team to achieve a common goal"
+                  : "умею работать в команде для достижения общей цели"}
               </ListItem>
               <ListItem sx={styles.aboutSkillsItem}>
                 {currentLanguage === "en"
-                  ? "Capable of self-learning, striving for self-development"
-                  : "Способна к самообучению, стремлюсь к саморазвитию"}
+                  ? "capable of self-learning, striving for self-development"
+                  : "способна к самообучению, стремлюсь к саморазвитию"}
               </ListItem>
               <ListItem sx={styles.aboutSkillsItem}>
                 {currentLanguage === "en"
-                  ? "Industrious and responsible"
-                  : "Трудолюбивая и ответственная"}
+                  ? "industrious and responsible"
+                  : "трудолюбивая и ответственная"}
               </ListItem>
               <ListItem sx={styles.aboutSkillsItem}>
                 {currentLanguage === "en"
-                  ? "Sociable and friendly"
-                  : "Общительная и дружелюбная"}
+                  ? "sociable and friendly"
+                  : "общительная и дружелюбная"}
               </ListItem>
               <ListItem sx={styles.aboutSkillsItem}>
                 {currentLanguage === "en"
                   ? "I have analytical thinking and the ability to find effective solutions"
-                  : "Имею аналитическое мышление и способность находить эффективные решения"}
+                  : "имею аналитическое мышление и способность находить эффективные решения"}
               </ListItem>
               <ListItem sx={styles.aboutSkillsItem}>
                 {currentLanguage === "en"
-                  ? "Attentive to detail, energetic and creative"
-                  : "Внимательная к деталям, энергичная и креативная"}
+                  ? "attentive to detail, energetic and creative"
+                  : "внимательная к деталям, энергичная и креативная"}
               </ListItem>
             </List>
           </Box>
@@ -150,13 +150,13 @@ export const About: FC = () => {
               <List sx={styles.aboutSkillsList}>
                 <ListItem sx={styles.aboutSkillsItem}>
                   {currentLanguage === "en"
-                    ? "Participated in the development of the company's main product - web application Bizzee! (appointment service), using React/Redux, Typescript, Material UI;"
-                    : "Участвовала в разработке основного продукта компании - веб-приложения Bizzee! (сервис записи на услуги), используя React/Redux, Typescript, Material UI;"}
+                    ? "participated in the development of the company's main product - web application Bizzee! (appointment service), using React/Redux, Typescript, Material UI;"
+                    : "участвовала в разработке основного продукта компании - веб-приложения Bizzee! (сервис записи на услуги), используя React/Redux, Typescript, Material UI;"}
                 </ListItem>
                 <ListItem sx={styles.aboutSkillsItem}>
                   {currentLanguage === "en" ? (
                     <Typography>
-                      Created the company&apos;s website using HTML, CSS,
+                      created the company&apos;s website using HTML, CSS,
                       JavaScript and Bootstrap (
                       <Link
                         href="https://marsnetsolutions.com/"
@@ -170,7 +170,7 @@ export const About: FC = () => {
                     </Typography>
                   ) : (
                     <Typography>
-                      Создавала веб-сайт компании с помощью HTML, CSS,
+                      создавала веб-сайт компании с помощью HTML, CSS,
                       JavaScript и Bootstrap (
                       <Link
                         href="https://marsnetsolutions.com/"
@@ -186,13 +186,13 @@ export const About: FC = () => {
                 </ListItem>
                 <ListItem sx={styles.aboutSkillsItem}>
                   {currentLanguage === "en"
-                    ? "Worked on Agile/Scrum principles using Jira/Confluence;"
-                    : "Работала по принципам Agile/Scrum, используя Jira/Confluence;"}
+                    ? "worked on Agile/Scrum principles using Jira/Confluence;"
+                    : "работала по принципам Agile/Scrum, используя Jira/Confluence;"}
                 </ListItem>
                 <ListItem sx={styles.aboutSkillsItem}>
                   {currentLanguage === "en"
-                    ? "Worked with Git (GitHub/GitLab)."
-                    : "Работала с Git (GitHub/GitLab)."}
+                    ? "worked with Git (GitHub/GitLab)."
+                    : "работала с Git (GitHub/GitLab)."}
                 </ListItem>
               </List>
             </Box>
@@ -207,8 +207,8 @@ export const About: FC = () => {
               </Typography>
               <Typography sx={styles.aboutExperienceAndEducationDescription}>
                 {currentLanguage === "en"
-                  ? "My personal projects can be viewed on a separate Portfolio page"
-                  : "Мои личные проекты можно посмотреть на отдельной странице Портфолио"}
+                  ? "my personal projects can be viewed on a separate Portfolio page"
+                  : "мои личные проекты можно посмотреть на отдельной странице Портфолио"}
               </Typography>
               <Button onClick={goToPortfolio} sx={styles.aboutButton}>
                 {currentLanguage === "en" ? "Portfolio" : "Портфолио"}
