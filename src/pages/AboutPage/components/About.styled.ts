@@ -237,4 +237,15 @@ export const styles = {
   aboutLanguageDescription: {
     textAlign: "center",
   },
+  aboutSkillsLink: {
+    color: "text.primary",
+    textDecoration: "none",
+    borderBottom: "1px solid",
+    borderColor: "color.greyDark",
+    transition: "ease 0.5s",
+    "&:hover": {
+      opacity: "0.7",
+      transition: "ease 0.5s",
+    },
+  },
 };

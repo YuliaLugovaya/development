@@ -6,6 +6,7 @@ import {
   List,
   ListItem,
   Typography,
+  Link,
 } from "@mui/material";
 import { styles } from "./About.styled";
 import { useSelector } from "react-redux";
@@ -146,11 +147,54 @@ export const About: FC = () => {
               <Typography sx={styles.aboutExperienceAndEducationPeriod}>
                 {currentLanguage === "en" ? "autumn 2023" : "осень 2023"}
               </Typography>
-              <Typography sx={styles.aboutExperienceAndEducationDescription}>
-                {currentLanguage === "en"
-                  ? "web application for making appointments for services; technology stack: React/Redux, Typescript, Material UI."
-                  : "веб-приложение для записи на услуги; стек технологий: React/Redux, Typescript, Material UI."}
-              </Typography>
+              <List sx={styles.aboutSkillsList}>
+                <ListItem sx={styles.aboutSkillsItem}>
+                  {currentLanguage === "en"
+                    ? "Participated in the development of the company's main product - web application Bizzee! (appointment service), using React/Redux, Typescript, Material UI;"
+                    : "Участвовала в разработке основного продукта компании - веб-приложения Bizzee! (сервис записи на услуги), используя React/Redux, Typescript, Material UI;"}
+                </ListItem>
+                <ListItem sx={styles.aboutSkillsItem}>
+                  {currentLanguage === "en" ? (
+                    <Typography>
+                      Created the company&apos;s website using HTML, CSS,
+                      JavaScript and Bootstrap (
+                      <Link
+                        href="https://marsnetsolutions.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={styles.aboutSkillsLink}
+                      >
+                        marsnetsolutions.com
+                      </Link>
+                      );
+                    </Typography>
+                  ) : (
+                    <Typography>
+                      Создавала веб-сайт компании с помощью HTML, CSS,
+                      JavaScript и Bootstrap (
+                      <Link
+                        href="https://marsnetsolutions.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={styles.aboutSkillsLink}
+                      >
+                        marsnetsolutions.com
+                      </Link>
+                      );
+                    </Typography>
+                  )}
+                </ListItem>
+                <ListItem sx={styles.aboutSkillsItem}>
+                  {currentLanguage === "en"
+                    ? "Worked on Agile/Scrum principles using Jira/Confluence;"
+                    : "Работала по принципам Agile/Scrum, используя Jira/Confluence;"}
+                </ListItem>
+                <ListItem sx={styles.aboutSkillsItem}>
+                  {currentLanguage === "en"
+                    ? "Worked with Git (GitHub/GitLab)."
+                    : "Работала с Git (GitHub/GitLab)."}
+                </ListItem>
+              </List>
             </Box>
             <Box sx={styles.aboutExperienceItem}>
               <Typography sx={styles.aboutExperienceAndEducationSubtitle}>
@@ -163,8 +207,8 @@ export const About: FC = () => {
               </Typography>
               <Typography sx={styles.aboutExperienceAndEducationDescription}>
                 {currentLanguage === "en"
-                  ? "my personal projects can be viewed on a separate Portfolio page"
-                  : "мои личные проекты можно посмотреть на отдельной странице Портфолио"}
+                  ? "My personal projects can be viewed on a separate Portfolio page"
+                  : "Мои личные проекты можно посмотреть на отдельной странице Портфолио"}
               </Typography>
               <Button onClick={goToPortfolio} sx={styles.aboutButton}>
                 {currentLanguage === "en" ? "Portfolio" : "Портфолио"}
@@ -199,21 +243,23 @@ export const About: FC = () => {
               <Typography sx={styles.aboutExperienceAndEducationPeriod}>
                 2022-2023
               </Typography>
-              <Typography sx={styles.aboutExperienceAndEducationDescription}>
-                RSSchool: JavaScript/Front-end
-              </Typography>
-              <Typography sx={styles.aboutExperienceAndEducationDescription}>
-                FreeCodeCamp: JavaScript Algorithms and Data Structures, Basic
-                JavaScrip
-              </Typography>
-              <Typography sx={styles.aboutExperienceAndEducationDescription}>
-                Hexlet: Basic of JavaScript
-              </Typography>
-              <Typography sx={styles.aboutExperienceAndEducationDescription}>
-                {currentLanguage === "en"
-                  ? "mentor training"
-                  : "обучение с ментором"}
-              </Typography>
+              <List sx={styles.aboutSkillsList}>
+                <ListItem sx={styles.aboutSkillsItem}>
+                  RSSchool: JavaScript/Front-end
+                </ListItem>
+                <ListItem sx={styles.aboutSkillsItem}>
+                  FreeCodeCamp: JavaScript Algorithms and Data Structures, Basic
+                  JavaScrip
+                </ListItem>
+                <ListItem sx={styles.aboutSkillsItem}>
+                  Hexlet: Basic of JavaScript
+                </ListItem>
+                <ListItem sx={styles.aboutSkillsItem}>
+                  {currentLanguage === "en"
+                    ? "mentor training"
+                    : "обучение с ментором"}
+                </ListItem>
+              </List>
             </Box>
           </Box>
         </Box>
