@@ -157,30 +157,12 @@ export const About: FC = () => {
                   {currentLanguage === "en" ? (
                     <Typography>
                       created the company&apos;s website using HTML, CSS,
-                      JavaScript and Bootstrap (
-                      <Link
-                        href="https://marsnetsolutions.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        sx={styles.aboutSkillsLink}
-                      >
-                        marsnetsolutions.com
-                      </Link>
-                      );
+                      JavaScript and Bootstrap;
                     </Typography>
                   ) : (
                     <Typography>
                       создавала веб-сайт компании с помощью HTML, CSS,
-                      JavaScript и Bootstrap (
-                      <Link
-                        href="https://marsnetsolutions.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        sx={styles.aboutSkillsLink}
-                      >
-                        marsnetsolutions.com
-                      </Link>
-                      );
+                      JavaScript и Bootstrap;
                     </Typography>
                   )}
                 </ListItem>
