@@ -43,7 +43,7 @@ export const portfolioData: PortfolioData[] = [
     id: 4,
     imageUrl: shelter,
     descriptionEn: "Animal shelter template website",
-    descriptionRu: "Сайт-шаблон для приюта животных вапарспаотпотапрв",
+    descriptionRu: "Сайт-шаблон для приюта животных",
     externalLink: "https://yulialugovaya.github.io/shelter/",
     stack: "HTML, CSS, JS, PixelPerfect",
   },
